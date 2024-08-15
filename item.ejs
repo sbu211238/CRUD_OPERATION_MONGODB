@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Shop Items</title>
+</head>
+<body>
+  <h1>Pizza Shop Items</h1>
+  <h2>Your item list : </h2>
+  <ul style="list-style-type: none;">
+    <% items.forEach(item => { %>
+      <h3><li><%=item.id%>.&nbsp;&nbsp;<%=item.name %></li></h3>
+    <% }) %>
+  </ul>
+</body>
+</html>
